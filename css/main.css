@@ -1,0 +1,6 @@
+html, body { margin: 0; padding: 0; }
+input{padding-top: 10px;padding-bottom:: 10px;margin: 6px 0;  background: #d6ebf9;padding: 10px 24px 10px 20px;border: 1px solid #b7b7b7;display: inline-block;}
+.regist-main{margin-right: auto; margin-left: auto; width: 266px; margin-top: 53px;}
+.button-div{margin-left: 71px;margin-top: 10px;}
+.text-style{font-style:normal;color: #8A141F;font-size: 15px}
+.regis-head{text-align: center;margin-top: 46px;margin-right: 69px;font-size: 33px;font-weight:bold;}
