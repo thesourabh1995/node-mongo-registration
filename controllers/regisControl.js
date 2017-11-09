@@ -14,7 +14,7 @@ app.controller('regisController', function($scope,$http){
       return false;
     }
 
-    $http.post('/regisAPI', user).then(function(res){
+    $http.post('/registerUser', user).then(function(res){
       if(res.status == 200){
         alert(res.data);
       }else {
