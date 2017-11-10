@@ -13,6 +13,7 @@ var crypto = require('crypto');
 
 app.use(express.static(path.join(__dirname, 'css')));
 app.use('/controllers', express.static(path.join(__dirname, 'controllers')));
+app.use('/js', express.static(path.join(__dirname, 'js')));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 

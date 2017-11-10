@@ -1,6 +1,17 @@
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; background-color: #FAF5F5;}
 input{padding-top: 10px;padding-bottom:: 10px;margin: 6px 0;  background: #d6ebf9;padding: 10px 24px 10px 20px;border: 1px solid #b7b7b7;display: inline-block;}
 .regist-main{margin-right: auto; margin-left: auto; width: 266px; margin-top: 53px;}
 .button-div{margin-left: 71px;margin-top: 10px;}
 .text-style{font-style:normal;color: #8A141F;font-size: 15px}
 .regis-head{text-align: center;margin-top: 46px;margin-right: 69px;font-size: 33px;font-weight:bold;}
+.main-div{margin-right: auto; margin-left: auto; width: 266px; margin-top: 74px;}
+.details-div{margin-right: auto; margin-left: auto; width: 266px; margin-top: 178px;}
+.login-div{margin-right: auto; margin-left: auto; width: 266px; margin-top: 21px;}
+.regis-div{margin-right: auto; margin-left: auto; width: 266px; margin-top: 21px;}
+.login-text{margin-left: 45px;}
+.regis-text{margin-left: 36px;}
+.margin-8{margin-left: 8px;}
+.margin-10{margin-left: -10px;}
+.position-div{width: 235px;background-color: #BFB1B1;text-align: center;}
+.detail-text-pad{padding-bottom: 15px;}
+.detail-top-pad{padding-top: 10px;}

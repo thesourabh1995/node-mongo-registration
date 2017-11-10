@@ -38,7 +38,7 @@ var registerUser = function(req,res){
           },function(err){
             assert.equal(err,null);
             console.log("Inserted successfully!!");
-            return res.status(200).send('Inserted successfully!!');
+            return res.status(200).send('Registered Successfully!!');
           });
         }else{
           return res.status(200).send('Email id already Exist!!');

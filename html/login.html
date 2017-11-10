@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script type="text/javascript" src='https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js'></script>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+<body ng-app="myApp">
+  <div class="regis-head">
+    Login
+  </div>
+  <div class="main-div" ng-controller="loginControl">
+    <div class="email-div">
+      <div class="email-text text-style">Email</div>
+      <input type="text" class="email" ng-model="email"/>
+    </div>
+    <div class="pass-div">
+      <div class="pass-text text-style">Password</div>
+      <input type="password" class="passkey" ng-model="passkey"/>
+    </div>
+    <div class="button-div">
+      <button class="button" ng-click="login();">Login</button>
+    </div>
+    <div class="regis-div">
+      <div class="regis-text">Not Registered Yet?</div>
+      <div class="button-div">
+        <button class="margin-10" ng-click="regisPage();">Register</button>
+    </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../controllers/loginController.js"></script>
+</html>

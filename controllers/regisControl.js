@@ -1,5 +1,5 @@
 var app = angular.module('myApp',[]);
-app.controller('regisController', function($scope,$http){
+app.controller('regisController', function($scope,$http,$window,$log){
   // console.log($scope.name);
   console.log($scope)
   var user = new Object();
@@ -35,6 +35,12 @@ app.controller('regisController', function($scope,$http){
     return true;
   }
 
+  $scope.loginPage = function(){
+    var url = "http://" + $window.location.host + "/login";
+    $log.log(url);
+    $window.location.href = url;
+  }
+
 });
 
 function validateData(data){
@@ -56,7 +62,7 @@ function validateData(data){
     }
 
     if(isValid && data.email){
-      if(!validateEmail(data.email))
+      if(!common.validateEmail(data.email))
           isValid = false;
       errTxt = "Invalid Email!";
     }
@@ -72,15 +78,4 @@ function validateData(data){
     rtrnArr['errTxt'] = errTxt;
     rtrnArr['isValid'] = isValid;
     return rtrnArr;
-}
-
-var validateEmail = function (email) {
-    var flag = true;
-    var atpos = email.indexOf("@");
-    var dotpos = email.lastIndexOf(".");
-    var isSpace = email.indexOf(" ");
-    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length || isSpace != -1) {
-        flag = false;
-    }
-    return flag;
 }
