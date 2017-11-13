@@ -15,3 +15,7 @@ input{padding-top: 10px;padding-bottom:: 10px;margin: 6px 0;  background: #d6ebf
 .position-div{width: 235px;background-color: #BFB1B1;text-align: center;}
 .detail-text-pad{padding-bottom: 15px;}
 .detail-top-pad{padding-top: 10px;}
+/*.first-row{display: inline-flex;}*/
+.week-row{display: inline-flex;}
+.download-button{padding: 10px 20px;border-radius: 5px;display: inline-block;width: 130px;margin:14px 0px 14px 10px;}​
+.but-background{background: #BCBCBC;}

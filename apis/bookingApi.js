@@ -5,19 +5,20 @@ const port = process.env.PORT || 8000;
 const path = require('path');
 const fs = require('fs');
 const bodyParser = require('body-parser');
-const routes = require('./routes.js')
+const dbPath = require('../mongodb_config.js');
 const MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectID;
 var assert = require('assert');
 var crypto = require('crypto');
-
-app.use(express.static(path.join(__dirname, 'css')));
-app.use('/controllers', express.static(path.join(__dirname, 'controllers')));
-app.use('/apis', express.static(path.join(__dirname, 'apis')));
-app.use('/js', express.static(path.join(__dirname, 'js')));
+var util = require('../util');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-
 var server = http.createServer(app);
-app.use('/', routes);
-server.listen(port);
+
+var calenderView = function(req, res){
+  res.sendFile(path.join(__dirname + '../..','/html/calender_view2.html'));
+}
+
+module.exports = {
+    calenderView: calenderView,
+};

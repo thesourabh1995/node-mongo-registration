@@ -11,4 +11,7 @@ router.get('/login', loginApi.loginPage);    //login page
 router.post('/loginUser', loginApi.loginUser);    //login page
 router.get('/userDetails', loginApi.userDetails);    //login page
 
+var bookingApi = require('./apis/bookingApi.js');
+router.get('/calender', bookingApi.calenderView);
+
 module.exports = router;
