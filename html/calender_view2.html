@@ -3,10 +3,16 @@
 <head>
   <title>Calender</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.js"></script>
+<script src="/controllers/angular-moment-picker-master/dist/angular-moment-picker.min.js"></script>
+<link href="/controllers/angular-moment-picker-master/dist/angular-moment-picker.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="main.css" />
 
 <body ng-app="myApp">
+  <div class="dateText">
+    <input class="form-control" ng-model="ctrl.input" type="text" placeholder="Select a date..." moment-picker="ctrl.input"/>
+  </div>
   <div class="main-div-view" ng-controller="calenderView">
     <div class="first-row week-row" ng-init="week1=[1,2,3,4,5,6,7]">
       <div class="div-{{x}}" ng-repeat="x in week1">

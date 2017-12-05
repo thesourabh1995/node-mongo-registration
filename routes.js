@@ -13,5 +13,6 @@ router.get('/userDetails', loginApi.userDetails);    //login page
 
 var bookingApi = require('./apis/bookingApi.js');
 router.get('/calender', bookingApi.calenderView);
+router.post('/coverSeat', bookingApi.calenderCover);
 
 module.exports = router;

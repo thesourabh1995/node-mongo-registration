@@ -23,9 +23,14 @@ function Common () {
     var yyyy = today.getFullYear();
     if(dd<10){
         dd='0'+dd;
-    }
-    if(mm<10){
+    }if(mm<10){
         mm='0'+mm;
+    }if(hh<10){
+        hh='0'+hh;
+    }if(m<10){
+        m='0'+m;
+    }if(s<10){
+        s='0'+s;
     }
     return today = yyyy+'/'+mm+'/'+dd +' '+hh+':'+m+':'+s ;
   };
